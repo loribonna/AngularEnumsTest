@@ -13,3 +13,9 @@ export namespace Enums {
 
     export const D = A.a;
 }
+
+export enum C {
+    a,
+    b,
+    c
+}

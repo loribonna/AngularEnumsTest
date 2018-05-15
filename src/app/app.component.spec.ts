@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { Enums } from '../Enums/enums';
+import { Enums, C } from '../Enums/enums';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -19,5 +19,9 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.B).toBe(Enums.B.a);
   }));
-
+  it('should get enum values from C', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.Cen).toBe(C.a);
+  }));
 });

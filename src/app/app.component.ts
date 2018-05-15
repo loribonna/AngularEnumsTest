@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Enums } from '../Enums/enums';
+import { Enums, C } from '../Enums/enums';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,9 @@ import { Enums } from '../Enums/enums';
 export class AppComponent {
   A = Enums.A.a;
   B = Enums.B.a;
+  Cen = C.a;
   constructor() {
-    console.log(this.A, this.B);
-    console.log(Enums);
+    console.log(this.A, this.B, this.Cen);
+    console.log(Enums, C);
   }
 }
