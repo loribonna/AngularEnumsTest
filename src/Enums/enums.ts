@@ -13,6 +13,18 @@ export namespace Enums {
 
     export const D = A.a;
 
+    export enum E {
+        a = 'a',
+        b = 'b',
+        c = 'c'
+    }
+
+    export enum F {
+        a = <any>'a',
+        b = <any>'b',
+        c = <any>'c'
+    }
+
 }
 
 

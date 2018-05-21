@@ -7,11 +7,12 @@ import { Enums, C } from '../Enums/enums';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  A = Enums.A.a;
-  B = Enums.B.a;
-  Cen = C.a;
+
   constructor() {
-    console.log(this.A, this.B, this.Cen);
-    console.log(Enums, C);
+    console.log('Enum used in the same namespace', Enums.A);
+    console.log('Enum not used in the same namespace', Enums.B);
+    console.log('Enum in namespace with assign', Enums.E);
+    console.log('Enum in namespace with assign and cast to <any>', Enums.F);
+    console.log('Enum outside a namespace', C);
   }
 }
